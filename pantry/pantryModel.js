@@ -9,7 +9,7 @@ module.exports = {
 };
 
 function get() {
-  return null;
+  return db("pantry");
 }
 
 function getById() {
