@@ -20,8 +20,10 @@ function modify() {
   return null;
 }
 
-function remove() {
-  return null;
+async function remove(id) {
+  return db("pantry")
+    .where({ id })
+    .del();
 }
 
 async function add(pantryItem) {
